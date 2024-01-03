@@ -10,7 +10,7 @@ import {action} from "@storybook/addon-actions"
 const meta: Meta<typeof AddItemForm> = {
     title: 'todolist/AddItemForm',
     component: AddItemForm,
-    parameters: {layout: "centered"},
+    // parameters: {layout: "centered"},
     argTypes: {
         addItem: {
             description: 'form click callback',
@@ -24,6 +24,7 @@ export default meta;
 type Story = StoryObj<typeof AddItemForm>;
 
 export const BaseExample: Story = {};
+
 
 const ErrorExampleComponent = React.memo((props: AddItemFormPropsType) => {
 
