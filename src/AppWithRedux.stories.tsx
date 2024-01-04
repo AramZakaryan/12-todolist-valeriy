@@ -45,7 +45,7 @@ const storeStory = legacy_createStore(rootReducerStory, initialStateStory as roo
 const meta: Meta<typeof AppWithRedux> = {
     title: 'todolist/AppWithRedux',
     component: AppWithRedux,
-    decorators: [(storyFn: any) => {
+    decorators: [(storyFn: ()=>React.ReactNode) => {
         return (<Provider store={storeStory}>
             {storyFn()}
         </Provider>)
